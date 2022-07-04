@@ -30,44 +30,67 @@ p span {
   margin-bottom: 50px;
 }
 
-.container-button1, .container-button2 {
+.container-buttons {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
-  justify-content: center;
-
+  justify-content: space-around;
+  align-items: center;
+  gap: 20px;
 }
 
 a {
   text-decoration: none;
 }
 
-button {
-  width: 216px;
-  height: 74px;
-  margin: 0px 40px 20px 0;
+.button {
+  width: 350px;
+  height: 80px;
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 40px;
-  background-color: #24141E;
   border: none;
   font-weight: 700;
   font-size: 20px;
   line-height: 23px;
   color: #FFFFFF;
   cursor: pointer;
+  margin-bottom: 20px;
 }
 
-button:hover {
+.button:hover {
   opacity: 0.7;
+  border: 0.5px solid #FFFFFF;
 }
 
-button:active {
+.button:active {
   opacity: 0.4;
+  border: 1px solid #FFFFFF;
 }
 
-button img {
+.button img {
   height: 50px;
   width: 50px;
+}
+
+.linkedin {
+  background-image: radial-gradient(circle at 120.71% 50%, #067bf4 0, #3c78f2 50%, #5575ef 100%);
+}
+
+.instagram {
+  background-image: radial-gradient(circle at 25.82% -16.45%, #ff59c0 0, #ff4ecd 12.5%, #ff45da 25%, #ff3fe6 37.5%, #f23cf2 50%, #d33ffe 62.5%, #ae46ff 75%, #7c4fff 87.5%, #0058ff 100%);
+}
+
+.portfolio {
+  background-image: radial-gradient(circle at 85.36% -11.24%, #8b7bdd 0, #6c6cd8 50%, #435ed3 100%);
+}
+
+.github {
+  background-image: radial-gradient(circle at 50% -20.71%, #ffb629 0, #ffa537 10%, #ff9243 20%, #ff7e4b 30%, #ff6951 40%, #f25353 50%, #d93f53 60%, #c22f54 70%, #ad2355 80%, #9b1b56 90%, #8c1859 100%);
+}
+
+@media (max-width: 720px) {
+  .container-buttons {
+    gap: 0
+  }
 }
